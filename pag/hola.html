@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="A10-Miau y marcuesbo">
+  <meta name="website" content="https://www.somaticasturias.es">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/pag.css">
+  <link rel="stylesheet" href="../css/hola.css">
+  <title>Dise&ntilde;o.</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/logo_muebles_de_diseno.png" alt="Logotipo de muebles de diseño">
+    </a>
+    <nav>
+      <button id="menuHambur">☰</button>
+      <ul id="menuLista">
+        <li><a href="../pag/hola.html">Diseño.</a></li>
+        <li><a href="../pag/mobiliario.html">Mobiliario</a></li>
+        <li><a href="../pag/producto.html">Producto</a></li>
+        <li><a href="../pag/interiores.html">Interiores</a></li>
+        <li><a href="../pag/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="hola">Hola.</h2>
+    <section>
+    <img src="../img/design_demo_web_muebles.png" alt="Creadora de la empresa fictícia Design" class="creadora">
+    <div class="sobremi">
+      <p>Jane Doe ha desarrollado una <strong>carrera multidisciplinar en dise&ntilde;o industrial, interiorismo y 
+         visualizaci&oacute;n t&eacute;cnica</strong>. Desde sus inicios en una empresa consagrada hasta la 
+         creaci&oacute;n de su propio estudio, su enfoque combina est&eacute;tica, funcionalidad y sensibilidad especial.</p>
+    </div>
+  </section>
+  <h2>Proyectos Destacados</h2>
+  <section class="cajas">
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto1_demo.jpg')">
+    <img src="../img/proyecto1_demo.jpg" alt="Casa Ladera">
+    <p><strong>Casa Ladera:</strong> Refugio minimalista en la monta&nacute;a Asturiana.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto2_demo.jpg')">
+    <img src="../img/proyecto2_demo.jpg" alt="Estudio Prisma">
+    <p><strong>Estudio Prisma:</strong> Oficina creativa para una agencia de dise&ntilde;o.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto3_demo.jpg')">
+    <img src="../img/proyecto3_demo.jpg" alt="Apartamento Aurora">
+    <p><strong>Apartamento Aurora:</strong> Renovaci&oacute;n de un piso antiguo con alma contempor&aacute;nea.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto4_demo.jpg')">
+    <img src="../img/proyecto4_demo.jpg" alt="Suite Nube">
+    <p><strong>Suite Nube:</strong> Interiorismo para un hotel boutique en la costa.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto5_demo.jpg')">
+    <img src="../img/proyecto5_demo.jpg" alt="Loft urbano">
+    <p><strong>Loft Urbano:</strong> Espacio industrial reconvertido en vivienda moderna.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto6_demo.jpg')">
+    <img src="../img/proyecto6_demo.png" alt="Cabaña forestal">
+    <p><strong>Caba&ntilde;a Forestal:</strong> Dise&ntilde;o; sostenible en plena naturaleza.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto7_demo.jpg')">
+    <img src="../img/proyecto7_demo.jpg" alt="Galería de arte">
+    <p><strong>Galería Prisma:</strong> Espacio expositivo con iluminaci&oacute;n escenogr&aacute;fica.</p>
+  </div>
+  <div class="cajas2" onclick="mostrarDetalle('../img/proyecto8_demo.jpg')">
+    <img src="../img/proyecto8_demo.jpg" alt="Café boutique">
+    <p><strong>Café Boutique:</strong> Interiorismo c&aacute;lido con materiales naturales.</p>
+  </div>
+  </section>
+    <div id="detalle" class="detalle">
+      <span onclick="cerrarDetalle()">✖</span>
+      <button id="prevBtn" onclick="mostrarAnterior()">❮</button>
+      <img id="imagenGrande" src="" alt="Detalle">
+      <button id="nextBtn" onclick="mostrarSiguiente()">❯</button>
+      <p id="descripcion"></p>
+    </div>
+</main>
+<footer class="pie-pagina">
+    <div class="logos">
+        <a href="https://validator.w3.org/check?uri=referer">
+      <img src="https://img.shields.io/badge/HTML5-valid-brightgreen" alt="HTML5 Validado">
+        </a>
+    </div>
+    <div class="info-pagina">
+        <p><a href="../pag/sobredemo.html">Sobre esta p&aacute;gina</a></p>
+    </div>
+</footer>
+<script src="../js/pag.js"></script>
+</body>
+</html>

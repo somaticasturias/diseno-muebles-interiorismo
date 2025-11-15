@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="A10-Miau y marcuesbo">
+  <meta name="website" content="https://www.somaticasturias.es">
+  <link rel="stylesheet" href="../css/index.css"> 
+  <link rel="stylesheet" href="../css/pag.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Interiores</title>  
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../img/logo_muebles_de_diseno.png" alt="Logotipo de muebles de diseño">
+    </a>
+     <nav>
+  <button id="menuHambur">☰</button>
+  <ul id="menuLista">
+    <li><a href="../pag/hola.html">Diseño.</a></li>
+    <li><a href="../pag/mobiliario.html">Mobiliario</a></li>
+    <li><a href="../pag/producto.html">Producto</a></li>
+    <li><a href="../pag/interiores.html">Interiores</a></li>
+    <li><a href="../pag/contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+
+
+  </header>
+  <main>
+    <h2 class="interiores">Interiores.</h2>
+    <div class="galeria">
+      <div class="item" onclick="mostrarDetalle('../img/banco_demo.jpg')">
+        <img src="../img/banco_demo.jpg" alt="Banco interior">
+        <h3>Banco</h3>
+      </div>
+      <div class="item" onclick="mostrarDetalle('../img/arenero_demo.jpg')">
+        <img src="../img/arenero_demo.jpg" alt="Arenero para gato">
+        <h3>Arenero</h3>
+      </div>
+      <div class="item" onclick="mostrarDetalle('../img/escalera_demo.jpg')">
+        <img src="../img/escalera_demo.jpg" alt="Escalera flotante">
+        <h3>Escalera</h3>
+      </div>
+      <div class="item" onclick="mostrarDetalle('../img/radiador_demo.jpg')">
+        <img src="../img/radiador_demo.jpg" alt="Radiador">
+        <h3>Radiador</h3>
+      </div>
+      <div class="item" onclick="mostrarDetalle('../img/dispensador_demo.jpg')">
+        <img src="../img/dispensador_demo.jpg" alt="Dispensador de jabón">
+        <h3>Dispensador</h3>
+      </div>
+      <div class="item" onclick="mostrarDetalle('../img/alfombra_demo.jpg')">
+        <img src="../img/alfombra_demo.jpg" alt="Alfombra">
+        <h3>Alfombra</h3>
+      </div>
+    </div>
+    <div id="detalle" class="detalle">
+      <span onclick="cerrarDetalle()">✖</span>
+      <button id="prevBtn" onclick="mostrarAnterior()">❮</button>
+      <img id="imagenGrande" src="../img/vacio.png" alt="Detalle">
+      <button id="nextBtn" onclick="mostrarSiguiente()">❯</button>
+      <p id="descripcion"></p>
+    </div>
+  </main>
+  <footer class="pie-pagina">
+    <div class="logos">
+    <a href="https://validator.w3.org/check?uri=referer">
+  <img src="https://img.shields.io/badge/HTML5-valid-brightgreen" alt="HTML5 Validado">
+</a>
+  </div>
+    <div class="info-pagina">
+      <p><a href="../pag/sobredemo.html">Sobre esta p&aacute;gina</a></p>
+    </div>
+  </footer>
+  <script src="../js/pag.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-family: 'Montserrat', sans-serif;    
+    }
+    .contenedor {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+    .logotipo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+    .logotipo img {
+        max-width: 30%;
+        height: auto;
+    }
+    .menu-principal {
+        margin-top: 4.5rem; 
+        display: flex;
+        justify-content: center;
+    }
+    .menu-principal ul {
+        list-style: none;       
+        display: flex;
+        flex-direction: column;  
+        gap: 1.2rem;             
+        align-items: center;     
+    }
+    .menu-principal li a {
+        text-decoration: none;    
+        font-size: 1.6rem;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+    .menu-principal li a:hover {
+        color: #f47e1d;          
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .pie-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #f47e1d; 
+    }
+    .logos img {
+        height: 20px; 
+        margin-right: 0.5em;
+    }
+    .info-pagina a {
+        text-decoration: none;
+        color: inherit;    
+    }
+/*  Tablets en modo retrato */
+@media (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+    .menu-principal li a {    
+        font-size: 2.2rem;   
+    }
+    .menu-principal ul { 
+        gap: 2rem;              
+    }
+    .logos img {
+        height: 30px; 
+    }
+    .info-pagina a {
+        font-size: 1.3rem;  
+    }
+    .logotipo img {
+        max-width: 40%;
+    }
+}
+/* Tablets en modo landscape */
+@media (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 50px;
+    }
+    .logotipo {
+        width: 16%;
+        justify-content: left;
+        margin-left: 2.5rem;
+    }
+    .logotipo img {
+        max-width: 40%;
+    }
+    .menu-principal ul {
+        flex-direction: row;
+        gap: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+}
+/*  Escritorio */
+@media (min-width: 1281px) {
+     .contenedor {
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 50px;
+        flex-wrap: wrap;
+    }
+    .logotipo {
+        width: 16%;
+        justify-content: left;
+        margin-left: 2.5rem;
+    }
+    .logotipo img {
+        max-width: 40%;
+    }
+    .menu-principal ul {
+        flex-direction: row;
+        gap: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+}
